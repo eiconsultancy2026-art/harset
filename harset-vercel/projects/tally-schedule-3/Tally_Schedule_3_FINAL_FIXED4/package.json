@@ -1,0 +1,32 @@
+{
+  "name": "tally_schedule_3",
+  "version": "2.0.0",
+  "description": "------- SCHEDULE 3 MAPPING (NOTE 1 TO 18) -------\r Note 1 - Share Capital                             : \u20b9 25,00,000.00 (Correct)\r Note 2 - Profit/Loss                               : \u20b9 12,79,290.39\r Note 3 - Secured and Unsecured Loans               : \u20b9 30,64,758.88\r Note 4 -                                           : \u20b9 0.00\r Note 5 - Short Term Provisions                     : \u20b9 5,60,824.00\r Note 6 - Trade Payables                            : \u20b9 66,43,234.00 (Correct)\r Note 7 - Other Current Liabilities                 : \u20b9 24,62,307.00 \r Note 8 - PPE (Fixed Assets)                        : \u20b9 1,94,019.32 (Correct)\r Note 9 - Long Term Loans & Advances                : \u20b9 2,00,000.00 (Correct)\r Note 10 - Investments                              : \u20b9 1,31,19,968.00(Correct)\r Note 11 - Sundry Debtors                           : \u20b9 2,92,128.99 (Correct)\r Note 12 - Cash & Cash Equivalents                  : \u20b9 25,01,601.93 (Correct)\r Note 13 - Other Current Assets                     : \u20b9 80,780.41 \r Note 14 - Revenue from Operations                  : \u20b9 2,46,03,237.66(Correct)\r Note 15 - Other Income                             : \u20b9 1,19,827.00(Correct)\r Note 16 - Employee Benefit Expenses                : \u20b9 30,95,198.89(Correct)\r Note 17 - Depreciation                             : \u20b9 2,50,633.67(Correct)\r Note 18 - Other Expenses                           : \u20b9 1,22,55,387.90",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js && node --check fetch_tally.js && node --check xml_parser_utils.js && node --check schedule3_model.js && node --check excel_validator.js && node --check generate_merged_excel.js && node --check generate_merged_excel_partnership.js && node --check generate_merged_excel_rwa_trust.js && node --check test_mapping_partnership.js && node --check test_mapping.js && node --check test_mapping_rwa.js && node --check public/script.js",
+    "check": "node --check server.js && node --check fetch_tally.js && node --check xml_parser_utils.js && node --check schedule3_model.js && node --check excel_validator.js && node --check generate_merged_excel.js && node --check generate_merged_excel_partnership.js && node --check generate_merged_excel_rwa_trust.js",
+    "diagnose": "node --check server.js && node --check fetch_tally.js && node --check xml_parser_utils.js && node --check test_mapping.js && node --check test_mapping_partnership.js && node --check test_mapping_rwa.js && node --check generate_merged_excel_partnership.js",
+    "test:pipeline": "node test_excel_pipeline.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ei-consulting/Tally_Schedule_3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ei-consulting/Tally_Schedule_3/issues"
+  },
+  "homepage": "https://github.com/ei-consulting/Tally_Schedule_3#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.2.5"
+  }
+}

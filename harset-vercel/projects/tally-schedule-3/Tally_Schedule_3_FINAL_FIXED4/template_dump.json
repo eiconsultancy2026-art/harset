@@ -1,0 +1,3085 @@
+{
+  "COMPUTATION FINAL": [
+    [
+      "NAME",
+      ":"
+    ],
+    [
+      "ADDRESS",
+      ":"
+    ],
+    [],
+    [],
+    [
+      "DATE OF INCORPORATION",
+      ":"
+    ],
+    [
+      "P A N",
+      ":"
+    ],
+    [
+      "PREVIOUS YEAR",
+      ":",
+      "2024-2025"
+    ],
+    [
+      "ASSESSMENT YEAR",
+      ":",
+      "2025-2026"
+    ],
+    [
+      "COMPUTATION STATEMENT for the Year Ended 31st March 2025"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Assesment Year",
+      "Loss Amount",
+      "Profit Adjusted (if any)",
+      "Bal Loss Carry forward",
+      "Carry forward upto"
+    ],
+    [
+      "I INCOME FROM BUSINESS OR PROFESSION",
+      null,
+      null,
+      null,
+      "AMOUNT (Rs.)",
+      null,
+      null,
+      null,
+      "2020-2021",
+      783848,
+      null,
+      783848
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "2021-2022",
+      339151,
+      null,
+      339151
+    ],
+    [
+      "1. Net Profit / (Loss) as per Profit & Loss Account",
+      null,
+      null,
+      null,
+      1237806.1431819994,
+      null,
+      null,
+      null,
+      "2022-2023(Profit)",
+      0,
+      -159713,
+      -159713
+    ],
+    [
+      "Add: Depreciation as per Companies Act  2013",
+      null,
+      null,
+      null,
+      250634.6,
+      null,
+      null,
+      null,
+      "2023-2024",
+      159187,
+      null,
+      159187,
+      " "
+    ],
+    [
+      "Add: Provision for Taxation",
+      null,
+      null,
+      null,
+      0,
+      null,
+      null,
+      null,
+      "2024-2025",
+      141387,
+      null,
+      141387
+    ],
+    [
+      "Add: Donation",
+      null,
+      null,
+      null,
+      0,
+      null,
+      null,
+      null,
+      "2025-2026",
+      0,
+      -1263860,
+      -1263860
+    ],
+    [
+      "Add:Income Tax Paid",
+      null,
+      null,
+      null,
+      0,
+      null,
+      null,
+      null,
+      "Total",
+      null,
+      null,
+      0
+    ],
+    [
+      "      ",
+      null,
+      null,
+      null,
+      1488440.7431819995
+    ],
+    [
+      "Less: Depreciation as per I.T.Act",
+      null,
+      null,
+      null,
+      224248.56530000002,
+      null,
+      null,
+      null,
+      "MAT Calculations"
+    ],
+    [
+      "Less: Defered tax Income",
+      null,
+      null,
+      null,
+      6860.37318199999,
+      null,
+      null,
+      null,
+      "Net Profit as per Books",
+      null,
+      1237806.1431819994
+    ],
+    [
+      "Less:  Interest on Deposit",
+      null,
+      null,
+      null,
+      119827,
+      null,
+      null,
+      null,
+      "Add: Provision for Taxation",
+      null,
+      0
+    ],
+    [
+      "Total  Profit / (Loss)",
+      null,
+      null,
+      null,
+      1137504.8046999995,
+      null,
+      null,
+      null,
+      "Add:Income Tax Paid",
+      null,
+      0
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Less : Deferred Tax Income",
+      null,
+      -6860.37318199999
+    ],
+    [
+      "2.Income from Other sources",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Taxable Income as per MAT",
+      null,
+      1230945.7699999996
+    ],
+    [
+      "Interest on Deposit",
+      null,
+      null,
+      null,
+      119827
+    ],
+    [
+      "Total Income",
+      null,
+      null,
+      null,
+      1257330.8046999995
+    ],
+    [
+      "Less: Previous Year Loss"
+    ],
+    [
+      "AY  2020-2021",
+      null,
+      null,
+      -624135
+    ],
+    [
+      "AY  2023-2024",
+      null,
+      null,
+      -159187,
+      null,
+      null,
+      null,
+      null,
+      "Tax Calculation under MAT-AY 2022-2023"
+    ],
+    [
+      "AY- 2021-2022",
+      null,
+      null,
+      -339151,
+      null,
+      null,
+      null,
+      null,
+      "Tax @ 15% of Book profits",
+      184641.86549999993
+    ],
+    [
+      "AY- 2024-2025",
+      null,
+      null,
+      -141387,
+      -1263860,
+      null,
+      null,
+      null,
+      "Cess @ 4%",
+      7385.674619999997
+    ],
+    [
+      "Total loss to be carried forward to next year",
+      null,
+      null,
+      null,
+      6529.195300000487,
+      null,
+      null,
+      null,
+      "MAT PAYABLE",
+      null,
+      192027.54011999993
+    ],
+    [
+      "Total  Profit  after Adjusted Loss",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Income Tax on above Income",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Add: Cess @ 4 %.",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(A)Total Tax ",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(B)Total Tax as per MAT workings",
+      null,
+      null,
+      null,
+      192029.54011999993
+    ],
+    [
+      "Total Tax(Higher of (A) and (B)",
+      null,
+      null,
+      null,
+      192029.54011999993
+    ],
+    [
+      "Add: Interest under sec 234A",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Add: Interest under sec 234B",
+      null,
+      null,
+      null,
+      11116
+    ],
+    [
+      "Add: Interest under sec 234C",
+      null,
+      null,
+      null,
+      8017
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      211162.54011999993
+    ],
+    [
+      "Less: TDS Receivable",
+      null,
+      null,
+      null,
+      33153
+    ],
+    [
+      "Tax/(Refund)-Rounded off",
+      null,
+      null,
+      null,
+      178010.54011999993
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "Computation": [
+    [
+      "NAME",
+      ":",
+      "M/s. ECS SYSTEMS SERVICES  INDIA PRIVATE LIMITED"
+    ],
+    [
+      "ADDRESS",
+      ":",
+      "NO.137, G BLOCK, 6TH AVENUE, ANNA NAGAR WEST, CHENNAI 600040"
+    ],
+    [],
+    [],
+    [
+      "DATE OF INCORPORATION",
+      ":",
+      41837
+    ],
+    [
+      "P A N",
+      ":",
+      "AADCE7141G"
+    ],
+    [
+      "PREVIOUS YEAR",
+      ":",
+      "2021-22"
+    ],
+    [
+      "ASSESSMENT YEAR",
+      ":",
+      "2022-23"
+    ],
+    [
+      "COMPUTATION STATEMENT for the Year Ended 31st March 2022"
+    ],
+    [],
+    [
+      "I INCOME FROM BUSINESS OR PROFESSION",
+      null,
+      null,
+      null,
+      "AMOUNT (Rs.)"
+    ],
+    [],
+    [
+      "     Net Profit / (Loss) as per Profit & Loss Account",
+      null,
+      null,
+      null,
+      1237806.1431819994,
+      185670.92147729994,
+      7426.836859091997,
+      193097.75833639194
+    ],
+    [
+      "Add: Provision for Taxation",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Add: Depreciation as per Companies Act  2013",
+      null,
+      null,
+      null,
+      250635
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      1488441.1431819994
+    ],
+    [
+      "Less: Depreciation as per I.T.Act",
+      null,
+      null,
+      null,
+      224248.94930000004
+    ],
+    [
+      "Less: Deffered Tax"
+    ],
+    [
+      "Less: 1/5 of Preliminary Expenses",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Less: Interest on Refund AY 2020-21",
+      null,
+      null,
+      null,
+      119827
+    ],
+    [
+      "Total  Profit / (Loss)",
+      null,
+      null,
+      null,
+      1144365.1938819995
+    ],
+    [],
+    [
+      "II. INCOME FROM OTHER SOURCES"
+    ],
+    [
+      "Interest on Refund AY 2020-21",
+      null,
+      null,
+      null,
+      119827
+    ],
+    [
+      "TOTAL INCOME",
+      null,
+      null,
+      null,
+      1264192.1938819995
+    ],
+    [
+      "Less: Previous Year Loss"
+    ],
+    [
+      "AY- 2021-2022",
+      null,
+      null,
+      -242966
+    ],
+    [
+      "AY- 2020-2021",
+      null,
+      null,
+      -653791,
+      -896757
+    ],
+    [],
+    [
+      "Loss to be carry forward",
+      null,
+      null,
+      null,
+      367435.19388199947
+    ],
+    [
+      "Income Tax on above profit (rounded off)",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Add: Cess 4%",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Tax",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Add:Interest U/s 234 A, B & C",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Total Tax paid"
+    ],
+    [
+      "Advance Tax AY 2021-22",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "TDS AY 2021-22 as per FORM 26AS",
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Tax payable/(Refund)",
+      null,
+      null,
+      null,
+      0
+    ]
+  ],
+  "BS": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      -3775760.5968152527,
+      -2852457.8863100004
+    ],
+    [],
+    [],
+    [],
+    [
+      "BALANCE SHEET AS AT 31st MARCH 2025"
+    ],
+    [],
+    [
+      "Particulars",
+      null,
+      null,
+      null,
+      "Note No.",
+      "As at 31st March, 2025\nRs. (In 1000s)",
+      "As at 31st March, 2024\nRs. (In 1000s)"
+    ],
+    [
+      "I",
+      "EQUITY AND LIABILITIES"
+    ],
+    [],
+    [
+      1,
+      "Shareholders’ funds"
+    ],
+    [
+      null,
+      "(a) Share capital ",
+      null,
+      null,
+      1,
+      2500,
+      2500
+    ],
+    [
+      null,
+      "(b) Reserves and surplus",
+      null,
+      null,
+      2,
+      1026.8962467519996,
+      254.64368999999994
+    ],
+    [
+      null,
+      "(c) Money received against share warrants"
+    ],
+    [],
+    [
+      2,
+      "Share application money pending allotment"
+    ],
+    [],
+    [
+      3,
+      "Non-current liabilities"
+    ],
+    [
+      null,
+      "(a) Long-term borrowings",
+      null,
+      null,
+      3,
+      3147145.26,
+      2936747.67
+    ],
+    [
+      null,
+      "(b) Deferred tax liabilities (net)"
+    ],
+    [
+      null,
+      "(c) Other Long-term liabilities",
+      null,
+      null,
+      4,
+      0,
+      0
+    ],
+    [
+      null,
+      "(d) Long-term provisions",
+      null,
+      null,
+      null,
+      0,
+      0
+    ],
+    [],
+    [
+      4,
+      "Current liabilities"
+    ],
+    [
+      null,
+      "     (a) Short-term borrowings"
+    ],
+    [
+      null,
+      "(b) Trade payables"
+    ],
+    [
+      null,
+      null,
+      null,
+      "(i) Total outstanding dues of micro enterprises and small enterprises",
+      null,
+      " "
+    ],
+    [
+      null,
+      null,
+      null,
+      "(ii) Total outstanding dues of creditors other than micro enterprises and small enterprises",
+      6,
+      6643234,
+      0
+    ],
+    [
+      null,
+      "(c) Other current liabilities",
+      null,
+      null,
+      7,
+      2465547,
+      34920
+    ],
+    [
+      null,
+      "(d) Short-term provisions",
+      null,
+      null,
+      5,
+      349662.5401199999,
+      109000
+    ],
+    [],
+    [
+      null,
+      "TOTAL",
+      null,
+      null,
+      null,
+      12609115.696366752,
+      3083422.3136899997,
+      null,
+      null,
+      16374778,
+      -3758801.9304512483
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      10100.37318199999,
+      -3768902.3036332484
+    ],
+    [
+      "II",
+      "ASSETS"
+    ],
+    [],
+    [
+      1,
+      "Non-current assets"
+    ],
+    [
+      null,
+      "(a) Property Plant and Equipment and Intangible assets"
+    ],
+    [
+      null,
+      "(i) Property, Plant and Equipment",
+      null,
+      null,
+      8,
+      194019.58999999985,
+      297556.6299999999
+    ],
+    [
+      null,
+      "(ii) Intangible assets"
+    ],
+    [
+      null,
+      "(iii) Capital Work In Progress"
+    ],
+    [
+      null,
+      "(iv) Intangible Assets Under Developments"
+    ],
+    [
+      null,
+      "(b) Non-current investments"
+    ],
+    [
+      null,
+      "(c) Deferred tax assets (net)",
+      null,
+      null,
+      null,
+      6860.37318199999
+    ],
+    [
+      null,
+      "(d) Long-term loans and advances",
+      null,
+      null,
+      9,
+      200000,
+      200000
+    ],
+    [
+      null,
+      "(e) Other non-current assets",
+      null,
+      null,
+      11,
+      292128.9900000042,
+      4319788.87
+    ],
+    [],
+    [
+      2,
+      "Current assets"
+    ],
+    [
+      null,
+      "(a) Current investments",
+      null,
+      null,
+      10,
+      13119968,
+      548233
+    ],
+    [
+      null,
+      "(b) Inventories",
+      null,
+      null,
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(c) Trade receivables"
+    ],
+    [
+      null,
+      "(d) Cash and cash equivalents",
+      null,
+      null,
+      12,
+      2501601.9299999997,
+      393602
+    ],
+    [
+      null,
+      "(e) Short-term loans and advances",
+      null,
+      null,
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(f) Other current assets",
+      null,
+      null,
+      13,
+      70300.41,
+      176701.7
+    ],
+    [
+      null,
+      null,
+      " ",
+      " "
+    ],
+    [
+      null,
+      "TOTAL",
+      null,
+      null,
+      null,
+      16384876.293182004,
+      5935880.2,
+      null,
+      null,
+      16374778,
+      10098.293182004243
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "."
+    ],
+    [
+      "The accompanying notes 1 to 13 are an integral part of these financial statements"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "Place: Chennai"
+    ],
+    [
+      "Date: 05-09-2025"
+    ]
+  ],
+  "PL": [
+    [],
+    [],
+    [],
+    [
+      "STATEMENT OF PROFIT AND LOSS ACCOUNT FOR THE YEAR ENDED 31st MARCH 2025"
+    ],
+    [],
+    [
+      null,
+      "Particulars",
+      "Note\n No.",
+      "As at 31st March, 2025\nRs. (In 1000s)",
+      "As at 31st March, 2024\nRs. (In 1000s)"
+    ],
+    [],
+    [
+      null,
+      "INCOME "
+    ],
+    [
+      "I",
+      "Revenue from operations",
+      14,
+      24603237.66,
+      4351610
+    ],
+    [
+      "II",
+      "Other Income",
+      15,
+      119827,
+      25926
+    ],
+    [],
+    [
+      "III",
+      "TOTAL INCOME ( I + II )",
+      null,
+      24723064.66,
+      4377536
+    ],
+    [],
+    [
+      "IV",
+      "EXPENSES"
+    ],
+    [],
+    [
+      null,
+      "(a) Cost of materials consumed",
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(b) Purchases of Stock In Trade ",
+      null,
+      8095199.43,
+      0
+    ],
+    [
+      null,
+      "(c) Changes in inventories of finished goods, ",
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(d) Changes in work-in-progress and stock-in-trade",
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(e) Employee benefits expenses",
+      16,
+      3095198.89,
+      3106236
+    ],
+    [
+      null,
+      "(f) Depreciation and amortisation expenses",
+      17,
+      250633.67,
+      220743
+    ],
+    [
+      null,
+      "(f) Finance costs",
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(g) Other expenses",
+      18,
+      12051086.9,
+      1185104.72
+    ],
+    [],
+    [
+      null,
+      "TOTAL EXPENSES",
+      null,
+      23492118.89,
+      4512083.72
+    ],
+    [],
+    [
+      "V",
+      "Profit before exceptional and extraordinary items and tax (III-IV)",
+      null,
+      1230945.7699999996,
+      -134547.71999999974
+    ],
+    [
+      "VI",
+      "Exceptional items",
+      null,
+      0,
+      0
+    ],
+    [
+      "VII",
+      "Profit before extraordinary items and tax ( V- VI)",
+      null,
+      1230945.7699999996,
+      -134547.71999999974
+    ],
+    [
+      "VIII",
+      "Extraordinary Items",
+      null,
+      0,
+      0
+    ],
+    [
+      "IX",
+      "Profit before tax (VII-VIII)",
+      null,
+      1230945.7699999996,
+      -134547.71999999974
+    ],
+    [],
+    [
+      "X",
+      "Tax Expense:"
+    ],
+    [
+      null,
+      "(a) Current tax expense",
+      null,
+      0,
+      0
+    ],
+    [
+      null,
+      "(b) Deferred tax",
+      null,
+      -6860.37318199999,
+      0
+    ],
+    [],
+    [
+      "XI",
+      "Profit / (Loss) from continuing operations (VII-VIII)",
+      null,
+      1237806.1431819994,
+      -134547.71999999974
+    ],
+    [],
+    [
+      "XII",
+      "Profit/(loss) from discontinuing operations"
+    ],
+    [
+      "XIII",
+      "Tax expense of discontinuing operations"
+    ],
+    [
+      "XIV",
+      "Profit/(loss) from Discontinuing operations (after tax)(XII - XIII)",
+      null,
+      0,
+      0
+    ],
+    [
+      "XV",
+      "Profit/ (Loss) (XI+XIV)",
+      null,
+      1237806.1431819994,
+      -134547.71999999974
+    ],
+    [],
+    [
+      "XVI",
+      "Earning per equity share:"
+    ],
+    [],
+    [
+      null,
+      "(1) Basic",
+      null,
+      0.4951224572727998,
+      -0.0538190879999999
+    ],
+    [
+      null,
+      "(2) Diluted",
+      null,
+      0,
+      0
+    ],
+    [],
+    [
+      "The accompanying notes 14 to 18 are an integral part of these financial statements"
+    ],
+    [],
+    [
+      "As per our report of even date attached"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "Place: Chennai"
+    ],
+    [
+      "Date:05-09-2025"
+    ]
+  ],
+  "Note 1 Sh Cap": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [],
+    [
+      "Note 1 - Share Capital"
+    ],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      null,
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Number of shares",
+      "Rs. (In 1000s)",
+      "Number of shares",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "(a) Authorised"
+    ],
+    [
+      "Authorised share capital",
+      null,
+      0,
+      null,
+      0
+    ],
+    [
+      "Equity shares of Rs.1/- each with voting rights",
+      2500000,
+      2500,
+      2500000,
+      2500
+    ],
+    [
+      "Preference shares of Rs.1/- each ….",
+      null,
+      0,
+      null,
+      0,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1000
+    ],
+    [
+      "(b) Issued",
+      null,
+      0,
+      null,
+      0
+    ],
+    [
+      "Subscribed and fully paid up",
+      null,
+      0,
+      null,
+      0
+    ],
+    [
+      "Equity shares of Rs.1 each with voting rights",
+      2500000,
+      2500,
+      2500000,
+      2500
+    ],
+    [
+      "Preference shares of Rs.1/- each …."
+    ],
+    [
+      "Subscribed and not fully paid up"
+    ],
+    [
+      "Equity shares of Rs.1 each with voting rights, unpaid amount per share - Rs ",
+      " ",
+      " ",
+      0,
+      0
+    ],
+    [
+      "Preference shares of Rs.1/- each ….unpaid amount per share - Rs "
+    ],
+    [
+      "Total",
+      2500000,
+      2500,
+      2500000,
+      2500
+    ],
+    [],
+    [
+      "(a) Reconciliation of the number of shares outstanding at the beginning and at the end of the reporting period"
+    ],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      null,
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Number of shares",
+      "Rs. (In 1000s)",
+      "Number of shares",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "Balance as at the beginning of the year",
+      2500000,
+      2.5,
+      2500000,
+      2500
+    ],
+    [
+      "Add : Shares issued"
+    ],
+    [
+      "Less : Shares Redeemed ",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      1000
+    ],
+    [
+      "Less : Shares Cancelled"
+    ],
+    [
+      "Add / Less : Others "
+    ],
+    [],
+    [
+      "Balance as at the end of the year",
+      2500000,
+      2.5,
+      2500000,
+      2500
+    ],
+    [],
+    [
+      "(b) Details of equity shares held by shareholders holding more than 5% of the aggregate shares in the Company"
+    ],
+    [],
+    [
+      "Name of Shareholders",
+      "No. of Shares",
+      "%",
+      "Value/Share",
+      "Total Value"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "As at March 31, 2024"
+    ],
+    [
+      "ECS Services Pty Ltd,Sydney",
+      2499999,
+      99.99996,
+      2499999,
+      99.99996
+    ],
+    [],
+    [
+      "TOTAL",
+      2499999,
+      99.99996,
+      2499999,
+      99.99996
+    ],
+    [],
+    [
+      "Name of Shareholders",
+      "No. of Shares",
+      "%",
+      "Value/Share",
+      "Total Value"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "As at March 31, 2023"
+    ],
+    [
+      "ECS Services Pty Ltd,Sydney",
+      2499999,
+      99.99996,
+      2499999,
+      99.99996
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "TOTAL",
+      2499999,
+      99.99996,
+      2499999,
+      99.99996
+    ],
+    []
+  ],
+  "Note 2& Note 3 ": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 2 - Reserves & Surplus"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [],
+    [
+      "(B) Surplus / (Deficit) in Statement of Profit and Loss "
+    ],
+    [
+      "Opening balance",
+      0.2526436899999999,
+      387.1914099999997
+    ],
+    [
+      "Profit / (Loss) for the year",
+      1026.6436030619996,
+      -134.54771999999974,
+      null,
+      null,
+      1000
+    ],
+    [
+      "MAT Credit Transfer",
+      0,
+      0
+    ],
+    [
+      "Closing balance",
+      1026.8962467519996,
+      252.64368999999994
+    ],
+    [],
+    [],
+    [
+      "Total",
+      1026.8962467519996,
+      252.64368999999994
+    ],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 3 -Long-term Borrowings"
+    ],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "(A) Secured"
+    ],
+    [
+      "(a) Bonds/debentures",
+      0,
+      0
+    ],
+    [
+      "(b) Term loans: ",
+      0
+    ],
+    [
+      "      (A) from banks.",
+      82386.38,
+      102.67,
+      null,
+      1000
+    ],
+    [
+      "\n      (B) from other parties.",
+      0,
+      0
+    ],
+    [],
+    [
+      "Secured Loans ",
+      82386.38,
+      102.67
+    ],
+    [],
+    [
+      "(B) Unsecured"
+    ],
+    [
+      "(a) Bonds/debentures",
+      0,
+      0
+    ],
+    [
+      "(b) Term loans: \n      (A) from banks.\n      (B) from other parties.",
+      0
+    ],
+    [
+      "(c) Other loans and advances (Director Loan )",
+      0
+    ],
+    [
+      "         Loan from Director - Sasikumar",
+      226598.88,
+      98485
+    ],
+    [
+      "         Loan from Director - Raj Masson",
+      2838160,
+      2838160
+    ],
+    [],
+    [
+      "Unsecured Loans ",
+      3064758.88,
+      2936645
+    ],
+    [],
+    [
+      "Total",
+      3147145.26,
+      2936747.67
+    ]
+  ],
+  "Note 4 Oth LTL": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [],
+    [
+      "Note 4 - Other Long-Term Liabilities"
+    ],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [],
+    [
+      "Trade payables"
+    ],
+    [
+      "J Venkataramanan",
+      0,
+      0
+    ],
+    [
+      "Total",
+      0,
+      0
+    ],
+    [],
+    [],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "(A) Total outstanding dues of micro enterprises and small enterprises"
+    ],
+    [
+      "(B) Total outstanding dues of creditors other than micro enterprises and small enterprises",
+      0,
+      0
+    ],
+    [],
+    [
+      "Total",
+      0,
+      0
+    ],
+    [],
+    [],
+    [
+      "Ageing for trade payables from the due date of payment for each of the category as at 31st March, 2025"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025"
+    ],
+    [
+      null,
+      "Not due",
+      "Less than 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i)   Undisputed dues - MSME",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(ii)  Undisputed dues - Others",
+      null,
+      0,
+      0,
+      null,
+      null,
+      0
+    ],
+    [
+      "(iii) Disputed dues - MSME",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(iv) Disputed dues - Others",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Total",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [],
+    [
+      "Unbilled Dues to be disclosed seperately "
+    ],
+    [],
+    [
+      "Ageing for trade payables from the due date of payment for each of the category as at 31st March, 2024"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Not due",
+      "Less than 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i)   Undisputed dues - MSME",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(ii)  Undisputed dues - Others",
+      null,
+      0,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(iii) Disputed dues - MSME",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(iv) Disputed dues - Others",
+      null,
+      null,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "Total",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "Note 5 LTP - STPL": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [],
+    [
+      "Note 5 - Long-Term Provisions and Short-Term Provisions"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      null,
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Long-term",
+      "Short-term",
+      "Long-term",
+      "Short-term"
+    ],
+    [
+      "(A) Provision for Audit Fees",
+      null,
+      88500,
+      null,
+      59000
+    ],
+    [
+      "(B)Provision for Secretarial charges",
+      null,
+      20000,
+      null,
+      20000
+    ],
+    [
+      "(C)Provision for Accounting charges",
+      null,
+      30000,
+      null,
+      30000
+    ],
+    [
+      "(D)Provision for Taxation",
+      null,
+      211162.54011999993,
+      null,
+      0
+    ],
+    [
+      "(E)Provision for Expenses",
+      null,
+      0,
+      null,
+      0
+    ],
+    [
+      "Total",
+      0,
+      349662.5401199999,
+      0,
+      109000
+    ]
+  ],
+  "Note 6 - Trd Pbl": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 6 - Trade Payables"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [],
+    [
+      "(A) Total outstanding dues of micro enterprises and small enterprises"
+    ],
+    [
+      "(B) Total outstanding dues of creditors other than micro enterprises and small enterprises",
+      null,
+      0
+    ],
+    [],
+    [
+      "Antrix Technologies",
+      null,
+      0
+    ],
+    [
+      "Ashok kumar",
+      null,
+      0
+    ],
+    [
+      "Endurance International Group of India",
+      null,
+      0
+    ],
+    [
+      "Infiniti Retail Limited",
+      null,
+      0
+    ],
+    [
+      "Avigilon",
+      3146546,
+      0
+    ],
+    [
+      "Siege DNA PVT LTD-AUSTRALIA",
+      3496688,
+      0
+    ],
+    [
+      "Total",
+      6643234,
+      0
+    ],
+    [],
+    [
+      "Ageing for trade payables from the due date of payment for each of the category as at 31st March, 2025"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025"
+    ],
+    [
+      null,
+      "Not due",
+      "Less than 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i)   Undisputed dues - MSME"
+    ],
+    [
+      "(ii)  Undisputed dues - Others",
+      0,
+      6643234,
+      0,
+      0,
+      0,
+      6643234
+    ],
+    [
+      "(iii) Disputed dues - MSME"
+    ],
+    [
+      "(iv) Disputed dues - Others"
+    ],
+    [
+      "Total",
+      0,
+      6643234,
+      0,
+      0,
+      0,
+      6643234
+    ],
+    [],
+    [
+      "Ageing for trade payables from the due date of payment for each of the category as at 31st March, 2024"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Not due",
+      "Less than 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i)   Undisputed dues - MSME"
+    ],
+    [
+      "(ii)  Undisputed dues - Others",
+      0,
+      0,
+      null,
+      null,
+      null,
+      0
+    ],
+    [
+      "(iii) Disputed dues - MSME"
+    ],
+    [
+      "(iv) Disputed dues - Others"
+    ],
+    [
+      "Total",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "Note 7 - OCL": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [],
+    [
+      "Note 7 - Other Current Liabilities"
+    ],
+    [],
+    [
+      "Particulars",
+      "As at\n31 March, 2025",
+      "As at\n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [],
+    [
+      " (A) PF Employer Contribution Payable",
+      5520,
+      5520
+    ],
+    [
+      "(B) PF Employee Contribution Payable",
+      11400,
+      11400
+    ],
+    [
+      "(C) TDS Payable Salary Payable",
+      743312,
+      13000
+    ],
+    [
+      "(D) Employee VPF",
+      5000,
+      5000
+    ],
+    [
+      "(E) GST Payable",
+      1700315,
+      0
+    ],
+    [
+      "Total",
+      2465547,
+      34920
+    ],
+    [],
+    []
+  ],
+  "Note 8 - PPE": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "                NOTE 08 - PROPERTY PLANT AND EQUIPMENT "
+    ],
+    [
+      "a. Details of PPE "
+    ],
+    [],
+    [
+      "Particulars",
+      "Computer & Accessories",
+      "Tools and Equipments",
+      "Furniture and Fixtures",
+      "Vehicles",
+      "Total Tangible Assets "
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [],
+    [
+      "Balance as at March 31, 2024",
+      2094314,
+      845653,
+      386416,
+      164187,
+      3490570
+    ],
+    [],
+    [
+      "Additions ",
+      147097.96,
+      0,
+      0,
+      0,
+      147097.96
+    ],
+    [
+      "Acquisition through Business Combinations"
+    ],
+    [
+      "Other Adjustments "
+    ],
+    [
+      "- Exchange Differnece "
+    ],
+    [
+      "- Change Due to Revaluation "
+    ],
+    [
+      "Disposals "
+    ],
+    [
+      "Capitalised"
+    ],
+    [],
+    [
+      "Balance as at March 31, 2025",
+      2241411.96,
+      845653,
+      386416,
+      164187,
+      3637667.96
+    ],
+    [],
+    [
+      "Accumulated Depreciation ",
+      1941011.81,
+      756876.66,
+      345877.9,
+      149247,
+      3193013.37
+    ],
+    [],
+    [
+      "Balance as at March 31, 2025",
+      300400.1499999999,
+      88776.33999999997,
+      40538.09999999998,
+      14940,
+      444654.58999999985
+    ],
+    [],
+    [
+      "Charge for the Year",
+      172452,
+      52062,
+      22254,
+      3867,
+      250635
+    ],
+    [
+      "Disposals for the Year"
+    ],
+    [
+      "Changes due to Revaluation "
+    ],
+    [],
+    [
+      "Balance as at March 31, 2025",
+      127948.1499999999,
+      36714.33999999997,
+      18284.099999999977,
+      11073,
+      194019.58999999985
+    ],
+    [],
+    [],
+    [],
+    [
+      "M/s. ECS SYSTEMS SERVICES  INDIA PRIVATE LIMITED"
+    ],
+    [
+      "NO.137,  G BLOCK, 6TH AVENUE,  ANNA NAGAR WEST CHENNAI - 600 040"
+    ],
+    [
+      "Statement of Depreciation for the FY 2024-25 As Per \"Income Tax Act-1961\""
+    ],
+    [],
+    [
+      "Particulars",
+      "Rate",
+      "WDV as on 01.04.2024",
+      "Additions (180 Days More)",
+      "Additions (180 Days Less)",
+      "Deletions",
+      "WDV as on 31.3.2025",
+      "Depreciation (>180 Days)",
+      "Depreciation (<180 Days)",
+      "Depreciation for the year F.Y 2024-25",
+      "WDV as on 31.03.2025"
+    ],
+    [],
+    [],
+    [
+      "Computer & Accessories",
+      0.4,
+      273258.43200000003,
+      32166.96,
+      114931,
+      0,
+      420356.39200000005,
+      122170.15680000003,
+      22986.2,
+      145156.35680000004,
+      275200.03520000004
+    ],
+    [
+      "Furnitures",
+      0.1,
+      291321,
+      0,
+      0,
+      0,
+      291321,
+      29132.100000000002,
+      0,
+      29132.100000000002,
+      262188.9
+    ],
+    [
+      "Plant & Machinery",
+      0.15,
+      333069.95,
+      0,
+      0,
+      0,
+      333069.95,
+      49960.4925,
+      0,
+      49960.4925,
+      283109.4575
+    ],
+    [],
+    [
+      "TOTAL",
+      null,
+      897649.382,
+      32166.96,
+      114931,
+      0,
+      1044747.342,
+      201262.74930000002,
+      22986.2,
+      224248.94930000004,
+      820498.3927000001
+    ],
+    [],
+    [],
+    [],
+    [
+      "Calculation of Defered Tax Asset/Liability"
+    ],
+    [
+      null,
+      null,
+      "Cos Act",
+      null,
+      "IT Act"
+    ],
+    [],
+    [
+      "Depreciation Availed",
+      null,
+      250635,
+      null,
+      224248.94930000004
+    ],
+    [],
+    [
+      "Excess Depreciation Claimed As per Cos Act",
+      null,
+      -26386.050699999963,
+      null,
+      null,
+      null,
+      "Tax at 25%",
+      -6596.512674999991
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "Cess at 4% on above",
+      -263.86050699999964
+    ],
+    [
+      "Deffered Tax Asset",
+      null,
+      -6860.37318199999,
+      null,
+      null,
+      null,
+      null,
+      -6860.37318199999
+    ],
+    [],
+    [
+      "Defered tax Assets",
+      6860.37318199999
+    ],
+    [
+      "Defered tax income",
+      6860.37318199999
+    ]
+  ],
+  "Note 09  & 10- LT Loans & Adv ": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 9: Long term Loans and Advances "
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "Unsecured advances : Considered Good"
+    ],
+    [],
+    [
+      "Capital Advances "
+    ],
+    [
+      "Loans and Advances to related parties"
+    ],
+    [
+      "Other Loans and Advances "
+    ],
+    [
+      "(a)Rental Advance",
+      200000,
+      200000
+    ],
+    [
+      "(b)USAM Technology Solutions",
+      0,
+      0
+    ],
+    [],
+    [
+      "Total Unsecured Advances",
+      200000,
+      200000
+    ],
+    [
+      "Total Advances",
+      200000,
+      200000
+    ],
+    [],
+    [
+      "Note 10: Investments "
+    ],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Rs. (In 1000s)",
+      "Rs. (In 1000s)"
+    ],
+    [
+      "Investments "
+    ],
+    [],
+    [
+      "Fixed Deposit "
+    ],
+    [
+      "Term Deposit - SBI ",
+      13000000,
+      500000
+    ],
+    [
+      "Add: Interest Accured for the FY 2022-23",
+      22307,
+      22307
+    ],
+    [
+      "Add: Interest Accured for the FY 2023-24",
+      25926,
+      25926
+    ],
+    [
+      "Add: Interest Accured for the FY 2024-25",
+      71735
+    ],
+    [
+      "Total ",
+      13119968,
+      548233
+    ]
+  ],
+  "Note 11 - Other Non Curr Assets": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 11  Other Non Current Assets "
+    ],
+    [],
+    [],
+    [
+      "Particulars",
+      "As at \n31 March, 2025",
+      "As at \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Long terms Trade Receivables ( include on deferred credit terms )"
+    ],
+    [
+      "Secured",
+      " ",
+      0
+    ],
+    [
+      "Unsecured - Considered Doubtful",
+      " "
+    ],
+    [
+      "a) Less than six months"
+    ],
+    [
+      "b) More than six months",
+      292128.9900000042,
+      4319788.87
+    ],
+    [
+      "Total ",
+      292128.9900000042,
+      4319788.87
+    ],
+    [],
+    [],
+    [
+      "Long term Trade Receivables Ageing Schedule for each category as at 31st  March 2025"
+    ],
+    [],
+    [
+      "Particulars",
+      "Outstanding for following periods from due date of payment (#)"
+    ],
+    [
+      null,
+      "Less than 6 months",
+      "6 months - 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i) Undisputed Trade Receivables"
+    ],
+    [
+      "- Considered Good",
+      304107.4800000042,
+      -11978.49,
+      0,
+      0,
+      0,
+      292128.9900000042
+    ],
+    [
+      "- Considered Doubtful",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [],
+    [
+      "(i) Disputed Trade Receivables"
+    ],
+    [
+      "- Considered Good",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "- Considered Doubtful",
+      " ",
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [],
+    [
+      "Total",
+      null,
+      null,
+      0,
+      0,
+      null,
+      292128.9900000042
+    ],
+    [],
+    [
+      "Long term Trade Receivables Ageing Schedule for each category as at 31st  March 2024"
+    ],
+    [],
+    [
+      "Particulars",
+      "Outstanding for following periods from due date of payment (#)"
+    ],
+    [
+      null,
+      "Less than 6 months",
+      "6 months - 1 year",
+      "1 - 2 years",
+      "2 - 3 years",
+      "More than 3 years",
+      "Total"
+    ],
+    [
+      "(i) Undisputed Trade Receivables"
+    ],
+    [
+      "- Considered Good",
+      null,
+      null,
+      null,
+      4319788.87,
+      0,
+      4319788.87
+    ],
+    [
+      "- Considered Doubtful",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [],
+    [
+      "(i) Disputed Trade Receivables"
+    ],
+    [
+      "- Considered Good",
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      "- Considered Doubtful",
+      " ",
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [],
+    [
+      "Total",
+      null,
+      null,
+      0,
+      4319788.87,
+      null,
+      4319788.87
+    ]
+  ],
+  "Note 12 & Note 13": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [],
+    [
+      "Note 12 Cash And Cash Equivalents"
+    ],
+    [],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Balances with Banks ",
+      2500188.51,
+      277665.3
+    ],
+    [
+      "Cheques, drafts on hand",
+      0,
+      0
+    ],
+    [
+      "Cash on Hand ",
+      1413.42,
+      115936.4
+    ],
+    [
+      "Others ( Specify nature )",
+      0,
+      0
+    ],
+    [],
+    [
+      "Total ",
+      2501601.9299999997,
+      393602
+    ],
+    [],
+    [
+      "Note 13  Other Current Assets"
+    ],
+    [],
+    [],
+    [
+      "Particulars",
+      "As at 31 March, 2025",
+      "As at 31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Current assets - specify nature if not in any other category "
+    ],
+    [
+      "Deposit (Asset)",
+      0,
+      0
+    ],
+    [
+      "Duties & Taxes",
+      0,
+      140835.7
+    ],
+    [
+      "TDS Receivable ",
+      33153,
+      0
+    ],
+    [
+      "MAT Credit",
+      17878,
+      17878
+    ],
+    [
+      "Professional Tax",
+      3240,
+      8988
+    ],
+    [
+      "Input GST Receivable",
+      16029.41,
+      9000
+    ],
+    [],
+    [
+      "Less : Provision for assets doubtful of recovery"
+    ],
+    [],
+    [
+      "Total",
+      70300.41,
+      176701.7
+    ]
+  ],
+  "Note 14 - 18 - PL Schedules": [
+    [],
+    [],
+    [],
+    [
+      "NOTES TO THE FINANCIAL STATEMENTS FOR THE YEAR ENDED 31 MARCH 2025"
+    ],
+    [],
+    [
+      "Note 14  Revenue  From  Operations"
+    ],
+    [],
+    [
+      "Particulars",
+      "For the year ended \n31 March, 2025",
+      "For the year ended \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Sale of Products "
+    ],
+    [
+      "Sale of Services ",
+      24603237.66,
+      4351610
+    ],
+    [
+      "Other Operating Revenues",
+      0
+    ],
+    [
+      "Grants or Donations received ( only for Sec 8 Companies )",
+      0
+    ],
+    [
+      "Less : Excise Duty "
+    ],
+    [],
+    [
+      "Total",
+      24603237.66,
+      4351610
+    ],
+    [],
+    [
+      "Note 15 Other Income "
+    ],
+    [
+      "Particulars",
+      "For the year ended \n31 March, 2025",
+      "For the year ended \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [
+      "Interest Income",
+      119827,
+      25926
+    ],
+    [
+      "Net Foreign Exchange Gain ",
+      0,
+      0
+    ],
+    [],
+    [
+      "Total",
+      119827,
+      25926
+    ],
+    [],
+    [],
+    [],
+    [
+      "Note 16 Employee Benefit Expenses"
+    ],
+    [],
+    [
+      "Particulars",
+      "For the year ended \n31 March, 2025",
+      "For the year ended \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Salaries and wages ",
+      2820000,
+      2812500
+    ],
+    [
+      "Leave Salary",
+      40326,
+      40326
+    ],
+    [
+      "PF - Management Contribution",
+      132360,
+      177360
+    ],
+    [
+      "Staff Welfare",
+      102512.89,
+      76050
+    ],
+    [],
+    [
+      "Total",
+      3095198.89,
+      3106236
+    ],
+    [],
+    [
+      "M/s. ECS SYSTEMS SERVICES  INDIA PRIVATE LIMITED     \n"
+    ],
+    [
+      "NO.137,  G BLOCK, 6TH AVENUE,  ANNA NAGAR WEST CHENNAI - 600 040"
+    ],
+    [],
+    [
+      "Note 17 Depreciation and Amortisation Expenses"
+    ],
+    [],
+    [
+      "Particulars",
+      "For the year ended \n31 March, 2025",
+      "For the year ended \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "Depreciation on property, plant and equipment (owned assets)",
+      250633.67,
+      220743
+    ],
+    [
+      "Depreciation on property, plant and equipment (leased assets)"
+    ],
+    [
+      "Amortisation on Intangible Assets "
+    ],
+    [],
+    [
+      "Total",
+      250633.67,
+      220743
+    ],
+    [],
+    [],
+    [
+      "Note 18 Other expenses"
+    ],
+    [],
+    [
+      "Particulars",
+      "For the year ended \n31 March, 2025",
+      "For the year ended \n31 March, 2024"
+    ],
+    [
+      null,
+      "Rs.",
+      "Rs."
+    ],
+    [],
+    [
+      "General Administration Expenses",
+      166209.12,
+      88403
+    ],
+    [
+      "Rent & Maintenance Charges",
+      175404.76,
+      144000
+    ],
+    [
+      "Bank Charges",
+      45830.29,
+      36113.23
+    ],
+    [
+      "Printing and Stationery",
+      62298,
+      29000
+    ],
+    [
+      "Telephone & Broadband Charges",
+      132831,
+      143512
+    ],
+    [
+      "Accounts Processing Charges",
+      30000,
+      30000
+    ],
+    [
+      "Interest  on Loan",
+      0,
+      0
+    ],
+    [
+      "Insurance",
+      23819,
+      1903
+    ],
+    [
+      "Repairs & Maintenance",
+      22959,
+      26149.12
+    ],
+    [
+      "Power & Fuel",
+      158616,
+      22897
+    ],
+    [
+      "Custom Duty Charges",
+      504357,
+      0
+    ],
+    [
+      "Professional Charges",
+      55404.240000000005,
+      13500
+    ],
+    [
+      "Secretarial Charges",
+      20000,
+      20000
+    ],
+    [
+      "Auditors Fees",
+      75000,
+      50000
+    ],
+    [
+      "Conveyance",
+      75052.28,
+      115719.75
+    ],
+    [
+      "Pooja Expenses",
+      11055,
+      12550
+    ],
+    [
+      "Computer & Software Expenses",
+      129153.47,
+      77647.44
+    ],
+    [
+      " Net Forex Loss",
+      93360.42,
+      172055.11
+    ],
+    [
+      "Miscellaneous Expenses",
+      0,
+      10104.43
+    ],
+    [
+      "Bad Debts",
+      4319788.87,
+      0
+    ],
+    [
+      "Web Designing Expenses",
+      38345.25,
+      111523
+    ],
+    [
+      "Office Maintenances",
+      0,
+      80027.64
+    ],
+    [
+      "Consulting Charges ",
+      5911603.2,
+      0
+    ],
+    [
+      "Total",
+      12051086.9,
+      1185104.72
+    ],
+    [],
+    [
+      "Of above, payment to Auditors "
+    ],
+    [
+      "Statutory Audit ",
+      75000,
+      50000
+    ],
+    [
+      "Taxation matters"
+    ],
+    [
+      "Company law matters"
+    ],
+    [
+      "Management Services"
+    ],
+    [
+      "Other Services"
+    ],
+    [
+      "Reimbursement of expenses"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "Sheet1": []
+}

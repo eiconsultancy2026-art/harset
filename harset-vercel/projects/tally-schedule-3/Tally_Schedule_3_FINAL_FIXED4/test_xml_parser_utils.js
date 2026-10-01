@@ -1,0 +1,12 @@
+'use strict';
+const assert = require('assert');
+const { normalizeAmount, getPath, parseTallyXml } = require('./xml_parser_utils');
+assert.strictEqual(normalizeAmount('10,000'), 10000);
+assert.strictEqual(normalizeAmount('10,000 Dr'), 10000);
+assert.strictEqual(normalizeAmount('10,000 Cr'), -10000);
+assert.strictEqual(normalizeAmount('(10,000)'), -10000);
+assert.strictEqual(normalizeAmount('₹ 1,25,000.50'), 125000.5);
+assert.strictEqual(normalizeAmount(null), 0);
+assert.strictEqual(getPath({}, 'A.B.C', ''), '');
+assert.strictEqual(parseTallyXml('<ENVELOPE><BODY><DATA>100</DATA></BODY></ENVELOPE>').ENVELOPE.BODY.DATA, 100);
+console.log('[INFO] XML parser/normalizer tests passed.');

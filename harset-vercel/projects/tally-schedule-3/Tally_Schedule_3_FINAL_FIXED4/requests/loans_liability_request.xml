@@ -1,0 +1,20 @@
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Export Data</TALLYREQUEST>
+    </HEADER>
+
+    <BODY>
+        <EXPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>Group Summary</REPORTNAME>
+
+                <STATICVARIABLES>
+                    <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                    <GROUPNAME>Loans (Liability)</GROUPNAME>
+                    <EXPLODEFLAG>Yes</EXPLODEFLAG>
+                </STATICVARIABLES>
+
+            </REQUESTDESC>
+        </EXPORTDATA>
+    </BODY>
+</ENVELOPE>

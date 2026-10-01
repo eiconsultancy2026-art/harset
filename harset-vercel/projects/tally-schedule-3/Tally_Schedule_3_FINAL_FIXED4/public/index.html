@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Schedule 3 Mapper - Side-by-Side Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2212%22 fill=%22%231a1a2e%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22Georgia,serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>T3</text></svg>">
+    <script src="company-select.js"></script>
+</head>
+
+<body>
+    <!-- Pvt Ltd Share Capital Modal -->
+    <div id="pvtltd-modal" class="modal-overlay hidden">
+        <div class="modal-box">
+            <h3 class="modal-title">&#127968; Private Limited Company Detected</h3>
+            <p class="modal-subtitle">Please provide the share capital details for <span id="modal-company-name"></span>
+            </p>
+            <div class="modal-fields">
+                <div class="input-group">
+                    <label for="modal-auth-capital">Authorized Capital (&#8377;)</label>
+                    <input type="number" id="modal-auth-capital" placeholder="e.g. 5000000" min="0">
+                </div>
+                <div class="modal-row">
+                    <div class="input-group">
+                        <label for="modal-no-shares">No. of Shares</label>
+                        <input type="number" id="modal-no-shares" placeholder="e.g. 500000" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="modal-face-value">Face Value per Share (&#8377;)</label>
+                        <input type="number" id="modal-face-value" placeholder="e.g. 10" min="0" step="0.01">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="modal-skip" class="secondary-btn" style="margin-top:0;">Skip</button>
+                <button id="modal-confirm" class="generate-btn"
+                    style="margin-top:0; padding:0.6rem 1.5rem; font-size:1rem;">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Server Settings Button & Dialog -->
+    <button id="server-settings-btn" class="floating-settings-btn">&#9881;</button>
+    <div id="server-settings-dialog" class="server-settings-box hidden">
+        <h4>Server Settings</h4>
+        <div class="input-group">
+            <label for="tally-ip-input">Tally IP</label>
+            <input type="text" id="tally-ip-input" placeholder="e.g. 172.16.1.4" />
+        </div>
+        <div class="input-group">
+            <label for="tally-port-input">Tally Port</label>
+            <input type="number" id="tally-port-input" placeholder="e.g. 9000" />
+        </div>
+        <button id="refresh-server-btn" class="generate-btn" style="margin-top: 1rem; width: 100%;">Refresh Session</button>
+    </div>
+
+    <!-- Company Checker Component -->
+    <div class="glass-container wide checker-container" style="margin-bottom: 2rem;">
+        <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.2rem; color: var(--text);">Company Tally Availability Checker</h2>
+        <div class="checker-fields" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+            <div class="input-group" style="flex: 1;">
+                <label for="checker-type-select">Filter by Type</label>
+                <select id="checker-type-select" class="company-select">
+                    <option value="">All Types</option>
+                </select>
+            </div>
+            <div class="input-group" style="flex: 2;">
+                <label for="checker-company-select">Select Company</label>
+                <select id="checker-company-select" class="company-select">
+                    <option value="">-- Select Company --</option>
+                </select>
+            </div>
+        </div>
+        <div id="checker-result" class="checker-result hidden" style="padding: 0.75rem; border-radius: 8px; font-weight: 500; text-align: center;"></div>
+    </div>
+
+    <div class="glass-container wide">
+        <header>
+            <h1>Tally <span>Mapper</span></h1>
+            <div id="current-server-display" style="font-size:0.9rem; color:var(--primary); font-weight:600; margin-top:0.25rem;">Server: <span id="display-ip">...</span>:<span id="display-port">...</span></div>
+            <p id="companies-status" style="color:var(--text-muted);font-size:0.85rem;margin-top:0.25rem;">Loading
+                companies from Tally...</p>
+        </header>
+
+        <main>
+            <div class="panels-container">
+                <!-- Left Panel -->
+                <div class="panel" id="panel-left">
+                    <form id="form-left" class="mapping-form" data-side="left">
+                        <div class="input-group">
+                            <label for="companyType-left">Type of Company</label>
+                            <select id="companyType-left" class="company-select" required>
+                                <option value="">-- Select Company Type --</option>
+                                <option value="HUF">HUF</option>
+                                <option value="Private Limited">Private Limited</option>
+                                <option value="Partnership Firm">Partnership Firm</option>
+                                <option value="Proprietorship">Proprietorship</option>
+                                <option value="RWA">RWA</option>
+                                <option value="Trust">Trust</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Company Name (Current Year)</label>
+                            <company-select id="companyName-left" side="left" label="Company Name (Current Year)"
+                                placeholder="-- Select Company --"></company-select>
+                        </div>
+
+                        <!-- Hidden date inputs used for form submission -->
+                        <input type="hidden" id="fromDate-left" name="fromDate">
+                        <input type="hidden" id="toDate-left" name="toDate">
+
+                        <div class="date-group">
+                            <div class="input-group">
+                                <label for="fromYear-left">Financial Year (Start)</label>
+                                <select id="fromYear-left" class="company-select year-select" required>
+                                    <option value="">-- From Year --</option>
+                                </select>
+                                <span class="year-hint" id="fromHint-left"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="toYear-left">Financial Year (End)</label>
+                                <select id="toYear-left" class="company-select year-select" required>
+                                    <option value="">-- To Year --</option>
+                                </select>
+                                <span class="year-hint" id="toHint-left"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="btn-left" class="generate-btn">
+                            <span class="btn-text">Generate Mapping</span>
+                            <div class="spinner" style="display: none;"></div>
+                        </button>
+                    </form>
+
+                    <div id="error-left" class="hidden error-container"></div>
+
+                    <div id="result-left" class="hidden result-container">
+                        <div class="result-header">
+                            <h2>Current Year Report</h2>
+                            <div style="display:flex;gap:0.5rem;">
+                                <button class="secondary-btn copy-btn" data-side="left">Copy Text</button>
+                                <button class="edit-btn" id="edit-btn-left" data-side="left">&#9998; Edit</button>
+                            </div>
+                        </div>
+                        <!-- Inline Edit Panel -->
+                        <div id="edit-panel-left" class="edit-panel hidden">
+                            <div class="edit-panel-title">&#9998; Authorized Capital — Note 1 Details</div>
+                            <div class="edit-panel-fields">
+                                <div class="input-group">
+                                    <label for="edit-auth-cap-left">Authorized Capital (&#8377;)</label>
+                                    <input type="number" id="edit-auth-cap-left" placeholder="e.g. 5000000" min="0">
+                                </div>
+                                <div class="edit-panel-row">
+                                    <div class="input-group">
+                                        <label for="edit-face-val-left">Face Value per Share (&#8377;)</label>
+                                        <input type="number" id="edit-face-val-left" placeholder="e.g. 10" min="0"
+                                            step="0.01">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="edit-no-shares-left">No. of Shares</label>
+                                        <input type="number" id="edit-no-shares-left" placeholder="e.g. 500000" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-panel-actions">
+                                <button class="secondary-btn edit-cancel-btn" data-side="left"
+                                    style="margin-top:0;">Cancel</button>
+                                <button class="generate-btn edit-apply-btn" data-side="left"
+                                    style="margin-top:0;padding:0.5rem 1.2rem;">Apply</button>
+                            </div>
+                        </div>
+                        <div id="output-left" class="structured-report"></div>
+                    </div>
+                </div>
+
+                <!-- Right Panel -->
+                <div class="panel" id="panel-right">
+                    <form id="form-right" class="mapping-form" data-side="right">
+                        <div class="input-group">
+                            <label for="companyType-right">Type of Company</label>
+                            <select id="companyType-right" class="company-select" required>
+                                <option value="">-- Select Company Type --</option>
+                                <option value="HUF">HUF</option>
+                                <option value="Private Limited">Private Limited</option>
+                                <option value="Partnership Firm">Partnership Firm</option>
+                                <option value="Proprietorship">Proprietorship</option>
+                                <option value="RWA">RWA</option>
+                                <option value="Trust">Trust</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Company Name (Previous Year)</label>
+                            <company-select id="companyName-right" side="right" label="Company Name (Previous Year)"
+                                placeholder="-- Select Company --"></company-select>
+                        </div>
+
+                        <!-- Hidden date inputs used for form submission -->
+                        <input type="hidden" id="fromDate-right" name="fromDate">
+                        <input type="hidden" id="toDate-right" name="toDate">
+
+                        <div class="date-group">
+                            <div class="input-group">
+                                <label for="fromYear-right">Financial Year (Start)</label>
+                                <select id="fromYear-right" class="company-select year-select" required>
+                                    <option value="">-- From Year --</option>
+                                </select>
+                                <span class="year-hint" id="fromHint-right"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="toYear-right">Financial Year (End)</label>
+                                <select id="toYear-right" class="company-select year-select" required>
+                                    <option value="">-- To Year --</option>
+                                </select>
+                                <span class="year-hint" id="toHint-right"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="btn-right" class="generate-btn">
+                            <span class="btn-text">Generate Mapping</span>
+                            <div class="spinner" style="display: none;"></div>
+                        </button>
+                    </form>
+
+                    <div id="error-right" class="hidden error-container"></div>
+
+                    <div id="result-right" class="hidden result-container">
+                        <div class="result-header">
+                            <h2>Previous Year Report</h2>
+                            <div style="display:flex;gap:0.5rem;">
+                                <button class="secondary-btn copy-btn" data-side="right">Copy Text</button>
+                                <button class="edit-btn" id="edit-btn-right" data-side="right">&#9998; Edit</button>
+                            </div>
+                        </div>
+                        <!-- Inline Edit Panel -->
+                        <div id="edit-panel-right" class="edit-panel hidden">
+                            <div class="edit-panel-title">&#9998; Authorized Capital — Note 1 Details</div>
+                            <div class="edit-panel-fields">
+                                <div class="input-group">
+                                    <label for="edit-auth-cap-right">Authorized Capital (&#8377;)</label>
+                                    <input type="number" id="edit-auth-cap-right" placeholder="e.g. 5000000" min="0">
+                                </div>
+                                <div class="edit-panel-row">
+                                    <div class="input-group">
+                                        <label for="edit-face-val-right">Face Value per Share (&#8377;)</label>
+                                        <input type="number" id="edit-face-val-right" placeholder="e.g. 10" min="0"
+                                            step="0.01">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="edit-no-shares-right">No. of Shares</label>
+                                        <input type="number" id="edit-no-shares-right" placeholder="e.g. 500000"
+                                            min="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-panel-actions">
+                                <button class="secondary-btn edit-cancel-btn" data-side="right"
+                                    style="margin-top:0;">Cancel</button>
+                                <button class="generate-btn edit-apply-btn" data-side="right"
+                                    style="margin-top:0;padding:0.5rem 1.2rem;">Apply</button>
+                            </div>
+                        </div>
+                        <div id="output-right" class="structured-report"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Toggles -->
+            <div id="view-toggles" class="view-toggles hidden">
+                <button id="btn-view-bs-table" class="view-btn"
+                    style="background: var(--primary); color: white; border-color: var(--primary);">Balance Sheet
+                </button>
+                <button id="btn-view-pl-table" class="view-btn"
+                    style="background: var(--primary); color: white; border-color: var(--primary);">P&amp;L
+                </button>
+            </div>
+
+            <!-- Merge Section -->
+            <div id="merge-section" class="hidden">
+                <div class="merge-box">
+                    <h3>Both mappings generated successfully!</h3>
+                    <p>You can now merge both sets of data into a single side-by-side Excel file.</p>
+                    <button id="merge-btn" class="primary-btn pulse-btn">
+                        <span class="btn-text">Merge &amp; Download Excel</span>
+                        <div class="spinner" style="display: none;"></div>
+                    </button>
+                    <div id="merge-error" class="hidden error-container" style="margin-top: 1rem;"></div>
+                    <a id="merged-download-link" class="secondary-btn excel-btn hidden" href="#" target="_blank"
+                        style="margin-top: 1rem;">Download Merged Excel</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- In-Page Tabular Report View -->
+    <div id="report-page" class="report-page hidden">
+        <div class="report-page-header">
+            <button id="btn-back" class="back-btn">&#8592; Back to Mapping</button>
+            <h2 id="report-page-title">Report</h2>
+            <button id="btn-print" class="print-btn">&#128438; Print</button>
+        </div>
+        <div class="report-page-body">
+            <div id="report-page-table-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

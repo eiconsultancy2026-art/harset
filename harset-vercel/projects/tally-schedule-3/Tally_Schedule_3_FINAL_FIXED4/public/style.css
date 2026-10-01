@@ -1,0 +1,834 @@
+/* c:\Kevin\ei\Tally_Schedule_3\public\style.css */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --text-main: #f8fafc;
+    --text-muted: #cbd5e1;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --input-bg: rgba(15, 23, 42, 0.6);
+    --error-color: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #0f172a; /* Same as root bg-color */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-main);
+    min-height: 100vh;
+    margin: 0;
+    padding: 3rem 1rem; /* Padding for top/bottom spacing */
+    overflow-x: hidden; /* Prevent horizontal movement */
+}
+
+.glass-container {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center horizontally */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+h1 span {
+    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.date-group {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .date-group {
+        flex-direction: column;
+    }
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+input {
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Date input styling for webkit */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.secondary-btn {
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+#result-container {
+    margin-top: 2rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    animation: fadeIn 0.5s ease;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+pre {
+    font-family: 'Consolas', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    color: #e2e8f0;
+    white-space: pre-wrap;
+}
+
+#error-container {
+    margin-top: 1.5rem;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.excel-btn {
+    text-decoration: none;
+    background: rgba(16, 185, 129, 0.2);
+    color: #6ee7b7;
+    display: inline-flex;
+    align-items: center;
+}
+
+.excel-btn:hover {
+    background: rgba(16, 185, 129, 0.3);
+}
+
+.structured-report {
+    background: rgba(15, 23, 42, 0.4);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+}
+
+.report-section {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 1rem;
+}
+
+.report-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.report-title {
+    font-weight: 600;
+    color: #93c5fd;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+}
+
+.report-row.sub-item {
+    padding-left: 1.5rem;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.report-row.sub-sub-item {
+    padding-left: 3rem;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.report-total {
+    font-weight: 600;
+    color: #f8fafc;
+    border-top: 1px dashed rgba(255,255,255,0.2);
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.money-val {
+    font-family: 'Consolas', monospace;
+    letter-spacing: 0.5px;
+}
+
+/* Side-by-Side Layout Additions */
+.glass-container.wide {
+    max-width: 1400px;
+    width: 95%;
+}
+
+.panels-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.panel {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.3);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+    .panels-container {
+        flex-direction: column;
+    }
+}
+
+.error-container {
+    margin-top: 1.5rem;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.result-container {
+    margin-top: 2rem;
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    animation: fadeIn 0.5s ease;
+}
+
+#merge-section {
+    margin-top: 2.5rem;
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.merge-box {
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.2), rgba(59, 130, 246, 0.1));
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+}
+
+.merge-box h3 {
+    font-size: 1.3rem;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+.merge-box p {
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.primary-btn {
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+}
+
+.pulse-btn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+/* View Toggles */
+.view-toggles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px dashed rgba(255,255,255,0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.view-btn {
+    background: rgba(15, 23, 42, 0.6);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.view-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--text-main);
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+}
+
+.view-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Balance Sheet specific styles */
+.bs-header {
+    text-align: center;
+    color: #60a5fa;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.total-section {
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem !important;
+    margin-top: 1rem;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+}
+
+.total-section .report-title {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* ===== In-Page Report View ===== */
+.report-page {
+    position: fixed;
+    inset: 0;
+    background: #0f172a; /* Dark theme instead of f1f5f9 */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    animation: slideInPage 0.3s ease;
+    overflow: hidden;
+}
+@keyframes slideInPage {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+.report-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e293b;
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    flex-shrink: 0;
+}
+.report-page-header h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #60a5fa;
+}
+.back-btn {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0;
+    transition: all 0.2s ease;
+}
+.back-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(-3px);
+    box-shadow: none;
+}
+.print-btn {
+    background: rgba(16,185,129,0.2);
+    color: #6ee7b7;
+    border: 1px solid rgba(16,185,129,0.4);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0;
+    transition: all 0.2s ease;
+}
+.print-btn:hover {
+    background: rgba(16,185,129,0.35);
+    box-shadow: none;
+}
+.report-page-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+}
+#report-page-table-container table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+#report-page-table-container th,
+#report-page-table-container td {
+    border: 1px solid #cbd5e1;
+    padding: 0.55rem 0.9rem;
+    text-align: left;
+    font-size: 0.93rem;
+    color: #1e293b;
+}
+#report-page-table-container th {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+#report-page-table-container .num { text-align: right; font-family: 'Consolas', monospace; }
+#report-page-table-container .bold { font-weight: 700; }
+#report-page-table-container .item { padding-left: 2rem; }
+#report-page-table-container .sub-item { padding-left: 3.5rem; color: #475569; font-size: 0.9rem; }
+#report-page-table-container .total-row td {
+    font-weight: 700;
+    background: #eff6ff;
+    border-top: 2px solid #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+    color: #1e40af;
+}
+@media print {
+    .report-page-header { display: none; }
+    .report-page-body { padding: 0; }
+    body > .glass-container { display: none; }
+}
+
+/* ===== Company Dropdown ===== */
+.company-select {
+    background: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+    width: 100%;
+    cursor: pointer;
+    appearance: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.company-select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+.company-select option {
+    background: #1e293b;
+    color: white;
+}
+
+/* ===== Pvt Ltd Modal ===== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.2s ease;
+}
+.modal-box {
+    background: #1e293b;
+    border: 1px solid rgba(59,130,246,0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 520px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    animation: slideInPage 0.3s ease;
+}
+.modal-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+.modal-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+.modal-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.modal-row {
+    display: flex;
+    gap: 1rem;
+}
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+/* ===== Year Hint ===== */
+.year-hint {
+    display: block;
+    font-size: 0.78rem;
+    color: #60a5fa;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    min-height: 1rem;
+}
+
+/* ===== Edit Button ===== */
+.edit-btn {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+    padding: 0.45rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0;
+}
+.edit-btn:hover {
+    background: rgba(251, 191, 36, 0.28);
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.2);
+}
+.edit-btn.active {
+    background: rgba(251, 191, 36, 0.35);
+    border-color: #fbbf24;
+}
+
+/* ===== Inline Edit Panel ===== */
+.edit-panel {
+    background: rgba(251, 191, 36, 0.06);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.25s ease;
+}
+.edit-panel-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 1rem;
+    letter-spacing: 0.3px;
+}
+.edit-panel-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+}
+.edit-panel-row {
+    display: flex;
+    gap: 1rem;
+}
+.edit-panel-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+}
+
+/* ===== Pvt Ltd Checkbox Filter ===== */
+.company-label-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}
+.pvt-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.82rem;
+    color: #94a3b8;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+}
+.pvt-checkbox-label:hover {
+    color: #60a5fa;
+}
+.pvt-checkbox {
+    width: 15px;
+    height: 15px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+.pvt-checkbox-label input:checked + span {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+/* ===== Checker Component ===== */
+.checker-container {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+    border-top: 3px solid #3b82f6;
+}
+
+.checker-result {
+    margin-top: 1rem;
+    font-size: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+.checker-result.success {
+    background: rgba(16, 185, 129, 0.15);
+    color: #6ee7b7;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.checker-result.error {
+    background: rgba(239, 68, 68, 0.15);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ===== Server Settings Box ===== */
+.floating-settings-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.floating-settings-btn:hover {
+    transform: rotate(45deg);
+    background: var(--primary-hover);
+}
+.server-settings-box {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 280px;
+    animation: fadeIn 0.2s ease;
+}
+.server-settings-box h4 {
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    font-size: 1.1rem;
+    text-align: center;
+}

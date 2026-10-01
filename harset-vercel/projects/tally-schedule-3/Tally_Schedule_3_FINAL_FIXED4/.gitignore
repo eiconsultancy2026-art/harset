@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Tally temporary XML responses
+ECS1_output_folder/*.xml
+ECS1_output_folder/**/*.xml
+responses/
+cache/
+*.tmp
+*.temp
+
+# Generated Excel outputs
+*.xlsx
+!*.template.xlsx
+!Format for Properiotorship and Partnership.xlsx
+!Format for trust and RWAs.xlsx
+
+# Logs
+*.log
+logs/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+
+# Test/coverage
+coverage/
+.nyc_output/
